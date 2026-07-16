@@ -1,0 +1,13 @@
+# Obsidian — estado local de UI (não versionar entre dispositivos)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Sistema
+.DS_Store
+.Trash/
+Thumbs.db
+
+# Conflitos de sincronização do iCloud
+*.icloud
+*conflicted copy*

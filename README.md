@@ -76,6 +76,23 @@ git add -A && git commit -m "estudo do dia" && git push
 
 ---
 
+## 🗂️ Base de conhecimento (Módulo 1)
+
+Conteúdo já registrado a partir das aulas:
+
+| Onde | O que |
+|------|-------|
+| `modulo-aulas/aulas/` | Aulas **08** (Profissões e Família), **09** (Gênero/Род), **10** (Cursiva) |
+| `modulo-solo/vocabulario/` | Vocabulário consolidado: profissões, família e pessoas, gênero |
+| `modulo-solo/prompts/` | Prompts de professora: memória de 25 palavras, roleplay, conversa, plano de 7 dias |
+| `recursos/links-modulo-1.md` | Links de prática (nacionalidades, cultura, cursiva) |
+
+### 👩‍🏫 Skill `professora-russo`
+Há uma skill do Claude Code em `.claude/skills/professora-russo/` — invoque **`/professora-russo`**
+(ou peça "seja minha professora de russo") para o Claude assumir a persona de professora usando
+esta base de conhecimento. No app do Claude por voz, use o prompt-base
+`modulo-solo/prompts/00-persona-professora.md`.
+
 ## 🧩 Seus prompts
 
 Coloque seus prompts bons em `modulo-solo/prompts/`, um por arquivo `.md`. Já deixei alguns modelos

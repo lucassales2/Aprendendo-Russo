@@ -28,16 +28,17 @@ Este README explica a arquitetura, como sincronizar (iCloud + Git) e como usar o
 
 ---
 
-## 📁 Estrutura das pastas
+## 📁 Estrutura — dois módulos
 
-| Pasta          | Para quê |
-|----------------|----------|
-| `prompts/`     | Seus prompts de ensino de idiomas em formato `.md` (tutor, correção, flashcards...) |
-| `licoes/`      | Uma nota por dia/sessão de estudo (`AAAA-MM-DD.md`) |
-| `vocabulario/` | Listas de palavras, campos semânticos, palavras por frequência |
-| `gramatica/`   | Anotações de gramática (casos, verbos, aspecto...) |
-| `templates/`   | Modelos do Obsidian (ex.: nota de lição diária) |
-| `recursos/`    | Links, materiais, referências externas |
+O vault é dividido em dois módulos independentes:
+
+| Módulo | Para quê |
+|--------|----------|
+| **`modulo-solo/`** | Estudo autônomo com o Claude (prompts, lições, vocabulário, gramática) |
+| **`modulo-aulas/`** | Acompanhar as aulas (resumos, tarefas, dúvidas) |
+| `recursos/` | Links e materiais compartilhados entre os módulos |
+
+Cada módulo tem seu próprio `README.md` explicando as pastas internas.
 
 ---
 
@@ -67,17 +68,17 @@ git add -A && git commit -m "estudo do dia" && git push
 
 ## 🎙️ Fluxo de estudo sugerido
 
-1. **Aquecimento** — peça uma revisão rápida do vocabulário de ontem (`prompts/flashcards.md`).
-2. **Conversa** — pratique diálogo com o tutor (`prompts/tutor-conversa.md`).
-3. **Correção** — cole o que você escreveu/falou e peça correção (`prompts/correcao.md`).
-4. **Registro** — salve a sessão em `licoes/AAAA-MM-DD.md` (use `templates/licao-diaria.md`).
-5. **Commit** — `git commit` para versionar o progresso.
+1. **Aquecimento** — revisão rápida do vocabulário (`modulo-solo/prompts/flashcards.md`).
+2. **Conversa** — pratique diálogo com o tutor (`modulo-solo/prompts/tutor-conversa.md`).
+3. **Correção** — cole o que você escreveu/falou e peça correção (`modulo-solo/prompts/correcao.md`).
+4. **Registro** — salve a sessão em `modulo-solo/licoes/AAAA-MM-DD.md` (use o template do módulo).
+5. **Commit** — `Commit-and-sync` no Obsidian para versionar o progresso.
 
 ---
 
 ## 🧩 Seus prompts
 
-Coloque seus prompts bons em `prompts/`, um por arquivo `.md`. Já deixei alguns modelos
+Coloque seus prompts bons em `modulo-solo/prompts/`, um por arquivo `.md`. Já deixei alguns modelos
 prontos lá — pode substituir pelos seus. Formato recomendado no topo de cada prompt:
 
 ```markdown

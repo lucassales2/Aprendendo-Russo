@@ -17,8 +17,10 @@ Apoio para as suas **aulas de russo**: registrar o que foi visto, organizar tare
 | 08 | Profissões e Família | `aulas/aula-08-profissoes-e-familia.md` |
 | 09 | Gênero dos substantivos (Род) | `aulas/aula-09-genero-dos-substantivos.md` |
 | 10 | Letra cursiva (Курсив) | `aulas/aula-10-letra-cursiva.md` |
+| — | **Recapitulação 08–10** (aulas perdidas) | `aulas/recapitulacao-aulas-08-10.md` |
 
-Vocabulário consolidado dessas aulas em `modulo-solo/vocabulario/`.
+Vocabulário consolidado dessas aulas em `modulo-solo/vocabulario/` — veja
+`vocabulario-modulo-1.md` para a lista completa unificada (com deck Anki).
 
 ## Fluxo sugerido
 1. **Antes da aula:** revise a última nota em `aulas/` e as `duvidas/`.
